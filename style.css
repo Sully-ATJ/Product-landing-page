@@ -1,0 +1,239 @@
+*{
+  box-sizing:border-box;
+}
+
+.page{
+  margin:0;
+  padding:0;
+  height:100vh;
+  width:100vw;
+  overflow-x:hidden;
+  overflow-y:scroll;
+  display:block;
+  background-color:#fff;
+}
+
+header{
+  display:inline-block;
+  width:100%;
+  height:130px;
+  position:fixed;
+  top:0;
+  z-index:3;
+  background-color:#fff;
+  opacity:1;
+}
+
+.logo{
+  float:left;
+  margin:20px;
+  text-transform: uppercase;
+  font-weight:500;
+  letter-spacing:1.5px;
+}
+
+.logo img{
+  height:100px;
+  background-color:#fff;
+}
+
+#nav-bar{
+  float:right;
+}
+
+#nav-bar ul{
+  display:flex;
+  margin-top:40px;
+}
+
+#nav-bar ul li{
+  list-style:none;
+}
+
+#nav-bar ul li a{
+  text-decoration:none;
+  color:#000;
+  text-transform:uppercase;
+  letter-spacing:1.2px;
+}
+
+.emailsec{
+  text-align:center;
+  height:60%;
+  width:100%;
+  margin-top:150px;
+  display:flex;
+  flex-direction:column;
+}
+
+
+form{
+  margin-top:6em;
+}
+
+#email{
+  width:300px;
+  padding:5px;
+}
+
+#submit{
+  width:150px;
+  padding:5px;
+  border-radius:5px;
+  border:none;
+  background:#ee4;
+}
+
+#submit:hover{
+  background:#ee1;
+  transition:0.4s ease-in;
+}
+
+#features{
+  margin-top:80px;
+  display:block;
+}
+
+
+.card1{
+  height:90px;
+  width:70%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:20px;
+  text-align:center;
+  padding:10px;
+  display:flex;
+}
+
+.card-title{
+  display:block;
+  margin-left:14px;
+}
+
+#versions{
+  margin-top:7em;
+  display:flex;
+  justify-content:space-around;
+}
+
+.card2{
+  height:350px;
+  width:350px;
+  background-color:#eee;
+  text-align:center;
+  border: 1px solid;
+}
+
+.card2 p{
+  margin-top:20px;
+}
+
+.product-name{
+  background-color:#ddd;
+  font-size:23px;
+  font-weight:500;
+}
+
+.buyBtn{
+  border:none;
+  width:100px;
+  height:40px;
+  border-radius:5px;
+  position:relative;
+  top:30px;
+  bottom:0;
+  background:#ee4;
+}
+
+.buyBtn:hover{
+  background:#acd;
+  cursor:pointer;
+  opacity:0.8;
+}
+
+#videosec{
+  width:100%;
+  margin-top:90px;
+}
+
+#video{
+ display:block;
+ margin: auto;
+}
+
+#footer {
+  margin-top:40px;
+  padding-top:40px;
+  background:#111;
+  height:130px;
+  width:100%;
+  color:#fff;
+}
+
+#footer p{
+  text-align:center;
+}
+.links{
+  display:flex;
+  justify-content:space-around;
+  width:100%;
+}
+
+@media (max-width:777px){
+  
+  header{
+    display:block;
+    height:200px;
+  }
+  
+  .logo{
+    transform:translateX(35%);
+    float:none;
+  }
+  
+  .logo img{
+    height:60px;
+  }
+  
+  #nav-bar{
+    float:none;
+    margin-top:-30px;
+  }
+  
+  #nav-bar ul{
+    display:block;
+  }
+  
+  #nav-bar ul li a{
+    width:100%;
+    text-align:center;
+    font-size:13px;
+  }
+  
+  
+  .emailsec{
+    margin-top:210px;
+  }
+  
+  .card1{
+    margin-top:75px;
+  }
+  
+  #versions{
+    flex-direction:column;
+  }
+  
+  .card2{
+    margin:auto;
+  }
+  
+  #footer{
+    height:155px;
+  }
+  .links{
+    flex-direction:column;
+    text-align:center;
+  }
+  
+}
